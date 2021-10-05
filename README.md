@@ -27,3 +27,14 @@ class `StatefulModel`.
 The training of the models can be inspected in the file `training/stateful.py`. At
 the bottom is the definition of the search space.
 
+# Attention scores
+The data frame with the attention scores is located in `data/results/gs/k8-hula-b64/scores` and `data/results/sparsemax/k8-hula-b64/scores`.
+The scores can be plotted with the function `plot_converged_attention_scores` in the module `present.py`. Here, the argument `path_to_df` must
+be set to one of the HDF files contained in the above folders.
+
+To create the plots, open a python console, import the `present` module and call the function `plot_converged_attention_scores`.
+
+# HLSA content
+The HLSA content can be visualized with the script `eval/eval_hlsas.py`. By executing the
+command `python3 -m eval.eval_hlsas` in the folder `/opt/project` the HLSA messages for the
+TE policies will be generated.
