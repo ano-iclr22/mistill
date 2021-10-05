@@ -1,0 +1,9 @@
+data/
+.idea/
+img/
+img-*/
+*.tar.gz
+*.pyc
+*.pdf
+*.swp
+
